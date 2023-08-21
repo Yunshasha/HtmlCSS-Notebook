@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互相转换</title>
+    <style>
+        /* display:block 转成块元素*/
+        p{
+            display: block;
+            width: 400px;
+            height: 35px;
+            background-color: green;
+
+        }
+        /* dispaly: inline-block 转成行内块元素 */
+        div{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+        /* display: inline 转成行内元素 */
+
+    </style>
+</head>
+<body>
+    <!-- 三种显示模式可以相互转换 -->
+    <div>this is div</div>
+    <div>this is div</div>
+    <p>this is p</p>
+    <p>
+        块一般作为大容器，可以嵌套基本其他。
+        但是p标签不能嵌套div，p，h等块级元素。
+    </p>
+    <p>
+        a标签内部可以嵌套任何元素，但是不能嵌套a
+    </p>
+
+</body>
+</html>

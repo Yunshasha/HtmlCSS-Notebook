@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tr-行，table row可包裹单元格 
+        td-表格单元格table datacell 
+        th-table header表头单元格，用于替换第一行标题的td，会显示加粗效果
+        caption- 表格的标题
+    -->
+
+    <!-- 表格的结构分为三部分，thead,tbody,tfoot，加了结构浏览器解析更快  -->
+    <table border="1" width = "600" height= "300">
+        <caption> <b>三年二班成绩单</b></caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>score</th>
+                <th>comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>annna</td>
+                <td>100</td>
+                <td>pretty</td>
+            </tr>
+            <tr>
+                <td>ale</td>
+                <td>98</td>
+                <td>cool</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>con</td>
+                <td>good</td>
+                <td>good</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- 合并单元格,同一个结构中的单元格才能合并，例如，tbody只能合并tbody
+        rowspan- 上下跨行合并   属性值想合并几个就填数字几
+        colspan- 左右跨列合并
+    -->
+    <table border="1">
+        <caption> <b>四年二班成绩单</b></caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>score</th>
+                <th>comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>annna</td>
+                <td rowspan="2">100</td>
+                <td>pretty</td>
+            </tr>
+            <tr>
+                <td>ale</td>
+                <!-- <td>100</td> -->
+                <td>cool</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>con</td>
+                <td colspan="2">good</td>
+                <!-- <td>good</td> -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

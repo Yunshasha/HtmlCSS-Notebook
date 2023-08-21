@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景平铺</title>
+    <!-- 背景图片比盒子尺寸小，但是不想让盒子改变尺寸，此时让背景图平铺 -->
+    <!-- bgr 属性 repeat/no-repeat/repeat-x/repeat-y -->
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            background-image: url(../../image/echo产品图.jpg);
+            /* picture size 358*309 */
+            font-size: 66px;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        this is word.
+    </div>
+</body>
+</html>

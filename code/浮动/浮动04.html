@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动的特点</title>
+    <!-- 浮动的标签  顶对齐 -->
+    <style>
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: #cccccc;
+            font-size: 12px;
+            float: left;
+            margin-top: 50px; ;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+        .three{
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">one，浮动脱离标准流的位置，不占用布局中标准流的空间,可以覆盖标准流中的元素（标签），但不覆盖内容（字）</div>
+    <div class="two">two，浮动找浮动，后面的浮动在前一个浮动后的位置</div>
+    <div class="three">three,浮动可以设置宽高。有行内块的特点</div>
+</body>
+</html>

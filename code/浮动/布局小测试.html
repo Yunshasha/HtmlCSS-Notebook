@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布局测试</title>
+    <!-- css属性书写顺序
+    1，浮动，display
+    2,盒子的属性
+    3，内容的属性
+    -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .one{
+            height: 40px;
+            background-color: #333333;
+        }
+        .two{
+            width: 1226px;
+            height: 100px;
+            background-color: #ffc0cb;
+            margin: 0 auto;
+        }
+        .three{
+            width: 1226px;
+            height: 460px;
+            margin: 0 auto;
+        }
+        .box1{
+            width: 234px;
+            height: 460px;
+            background-color: #ffa500;
+            float: left;
+        }
+        .box2{
+            width: 992px;
+            height: 460px;
+            background-color: #87ceeb;
+            float: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three">
+        <div class="box1"></div>
+        <div class="box2"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字样式</title>
+    <style>
+        p{
+            /* 设置文字粗细 */
+            font-weight: 700; 
+            /* 文字倾斜 */
+            font-style: italic;
+            font-family: 'Times New Roman', Times, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+        }
+        div{
+            
+            font-size: 30px;
+            /* 设置字体 */
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ff0000;
+        }
+        span{
+            /*font: style weight size font-family  */
+            font: italic 700 66px 宋体;
+            /* font-size: 22px; */
+            /* 想单独更改其中的某一个属性，根据层叠性，新属性放下面 */
+            color: rgba(233,213,222,0.5);
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- default size 16px -->
+    <!-- 层叠性，后面的覆盖前面的。如果重复设置样式，最下面的样式生效 -->
+    <p style="font-weight: 400;">这是文字</p>
+    <div>这是div</div>
+    <span>字体的复合属性</span>
+</body>
+</html>

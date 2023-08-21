@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 子元素浮动了，父元素不能被撑开，这时大小布局有影响 -->
+    <!-- 1，给父元素设置高度 -->
+    <!-- 2，给父元素内容最后加一个块级元素，给块级元素加属性clearfix，css属性值为clearboth -->
+    
+    <style>
+        /* 3，单伪元素清除法 ， 和额外标签法原理一致*/
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+            /* 补充写法加上，使伪元素看不见 */
+            height: 0;
+            visibility: hidden;
+        }
+
+        /* 4, 双伪元素清除法 */
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+        }
+        .clearfix::after{
+            clear: both;
+        }
+        /* 给父元素设置overflow: hidden */
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

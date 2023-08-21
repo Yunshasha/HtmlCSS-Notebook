@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器</title>
+    <style>
+        /* 与后代不同的是，它只选儿子子代一级，不能选后代孙子等 */
+        /* 这是后代： */
+        div a{
+            font-size: 44px;
+        }
+        /* 这是儿子 */
+        div>a{
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <a href="">son</a>
+        <p>
+            <a href="">second</a>
+        </p>
+    </div>
+</body>
+</html>
