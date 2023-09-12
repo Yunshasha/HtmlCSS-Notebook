@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        .box{
+            /* 拼爹型定位 
+            先找已经定位的父级，以爹为参照物定位
+            有父级，爹没定位，则以浏览器窗口为参照物定位
+            1,脱离标准流，不占位置
+            2,改变标签的显示模式，变成行内块特点
+            */
+           position: absolute;
+           /* left: 50px; */
+           left: 0;
+           top: 0;
+
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <div class="box">box</div>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+    <p>testtesttesttesttesttesttesttesttesttesttesttest</p>
+</body>
+</html>
