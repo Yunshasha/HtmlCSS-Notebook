@@ -1,0 +1,109 @@
+nav {
+    background-color: #eee;
+    padding: 0 1rem;
+    display: grid;
+    place-items: center;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+
+        li{
+            padding: 0;
+        }
+    }
+
+    > ul {
+        grid-auto-flow: column;
+
+        > li {
+            margin: 0 0.5rem;
+        }
+    }
+}
+
+.dropdown_title {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+}
+
+nav{
+    > ul{
+        >li {
+            a,
+            .dropdown_title {
+                text-decoration: none;
+                text-align: center;
+                color: blue;
+                font-size: 1.125rem;
+                display: inline-block;
+            }
+            > a,
+            .dropdown_title {
+                padding: 1rem 0.5rem;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+
+.dropdown{
+    position: relative;
+
+    .dropdown_menu {
+
+        position: absolute;
+        left: 50%;
+        top: calc((100% - 0.25rem));
+        transform: translateX(-50%);
+
+
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+        padding: 0.5em 0;
+        min-width: 15ch;
+
+        //hide the menu by default
+        transform: rotateX(-90deg) translateX(-50%);
+        transform-origin: top center;
+        opacity: 0.3;
+        transition: 280ms all 120ms ease-out;
+    }
+
+    a {
+        color: #444;
+        display: block;
+        padding: 0.5em;
+    }
+
+    //when focus dropdown button, revealing
+
+    &:hover,
+    &:focus-within {
+        .dropdown_menu {
+            opacity: 1;
+            transform: rotateX(0) translateX(-50%);
+            visibility: visible;
+        }
+    }
+
+    .dropdown_title {
+        display: inline-flex;
+        align-items: center;
+
+        &:after {
+            content: "";
+            border: 0.35rem solid transparent;
+            border-top-color: rgba(blue, 0.45);
+            margin-left: 0.25em;
+            transform: translateY(0.15em);
+        }
+    }
+
+    
+}

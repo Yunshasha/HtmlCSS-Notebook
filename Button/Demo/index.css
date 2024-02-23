@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+a,
+button {
+  font-size: 1.5rem;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+button.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+a.button,
+button.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  background-color: #3e68ff;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+  transition: 220ms all ease-in-out;
+}
+a.button:hover, a.button:active,
+button.button:hover,
+button.button:active {
+  background-color: #0037fe;
+}
+a.button:focus,
+button.button:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px #0029be;
+}
+a.button--small,
+button.button--small {
+  font-size: 1.15rem;
+}
+a.button--block,
+button.button--block {
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div:not(.card) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+div:not(.card) > * {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+div:not(.card) + div {
+  margin-top: 4rem;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #c9c9c9;
+  padding: 1.25rem;
+  width: 80vw;
+  border-radius: 8px;
+}
+.card h2,
+.card p {
+  margin: 0 0 0.8em;
+}
+
+/*# sourceMappingURL=index.css.map */

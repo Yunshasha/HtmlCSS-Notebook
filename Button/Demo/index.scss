@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+$btnColor : #3e68ff;
+
+a,
+button {
+    font-size: 1.5rem;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+button.button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+
+    
+}
+
+a.button,
+button.button {
+// display
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+// visual
+    background-color: $btnColor;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.18);
+//size
+    padding: 0.25em 0.75em;
+    min-width: 10ch;
+    min-height: 44px;
+//text
+    text-align: center;
+    line-height: 1.1;
+
+    transition: 220ms all ease-in-out;
+
+    &:hover,
+    &:active {
+        background-color: scale-color($btnColor,$lightness: -20%);
+    }
+
+    &:focus {
+        outline-style: solid;
+        outline-color: transparent;
+        box-shadow: 0 0 0 4px scale-color($btnColor, $lightness: -40%);
+    }
+
+    &--small {
+        font-size: 1.15rem;
+    }
+    &--block {
+        width: 100%;
+    }
+}
+
+body {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+div:not(.card) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    >* {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    + div {
+        margin-top: 4rem;
+    }
+}
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #c9c9c9;
+    padding: 1.25rem;
+    width: 80vw;
+    border-radius: 8px;
+
+    h2,
+    p {
+        margin: 0 0 0.8em;
+    }
+}

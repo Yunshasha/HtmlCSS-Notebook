@@ -1,0 +1,48 @@
+$method: flexbox;
+* {
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background-color: purple;
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+main {
+    padding: 1rem;
+    max-width: 80ch;
+    margin: 0 auto;
+    outline: 2px dashed grey;
+}
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+// keep the footer bottom
+
+body {
+
+    min-height: 100vh;
+    @if ($method == "flexbox"){
+        display: flex;
+        flex-direction: column;
+    }@else {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+}
+
+
+@if($method == "flexbox"){
+    footer {
+        margin-top: auto;
+    }
+}

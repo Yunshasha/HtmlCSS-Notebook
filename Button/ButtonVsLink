@@ -1,0 +1,31 @@
+Button:
+    Receive keyboard focus by default
+    "Click" with the Space key
+    Submit form data to a server
+    Reset a form
+    Be disabled with the disabled attribute
+    Instruct a screen reader with the implicit button role
+    Show :focus, :hover, :active, :disabled
+
+With a little scripting, a button is the perfect element for:
+
+    Opening a modal window
+    Triggering a popup menu
+    Toggling an interface
+    Playing media content
+    Inserting with JS if they only work with JS
+
+
+Link:
+    Create hypertext, a network of online resources
+    Navigate the user to a new page or view
+    Change the URL
+    Cause a browser redraw/refresh
+    Support page jumps with internal href attributes
+    Deep-link client-rendered applications
+    Are focusable by default with the href attribute
+    Register a click with the Enter key
+    Have the implicit link role
+    Can't be disabled like buttons but can be made inert with tabindex="-1" and aria-hidden="true"
+    Allow opening in new windows (and back in the day, framesets)
+    Show :link, :visited, :focus, :hover, :active
