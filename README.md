@@ -2,6 +2,7 @@
 
 ### Getting started
 This is the handbook of basic Html and CSS language.
+go to the ```code``` folder to check out all the tutorial
 > [!NOTE]
 > All the prctice and programs are based on Heima tutorial.
 
